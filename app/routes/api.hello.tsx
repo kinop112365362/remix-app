@@ -24,3 +24,8 @@ export const loader: LoaderFunction = async ({ request }) => {
 export default function Hello() {
   return null;
 }
+
+// 添加一个处理函数来防止 HTML 渲染
+export const handle = {
+  renderToString: () => null
+};
